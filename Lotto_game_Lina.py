@@ -3,7 +3,7 @@ import random
 import copy
 
 # Лотерейные карточки
-class bingo_card():
+class Bingo_card():
     def __init__(self, type):
         self.type = type
         self.bingo_card = {n: [' ', ' ', ' '] for n in range (0, 9)}
@@ -48,7 +48,7 @@ class bingo_card():
             return 0
 
 # Бочонки
-class kegs:
+class Kegs:
     def __init__(self):
         self.set_of_kegs = list(range(1, 90))
         self.active_keg = -1
@@ -68,7 +68,7 @@ class kegs:
         return '\nNew keg: {0} (expect{1}.'.format(self.active_keg, len(self.set_of_kegs))
 
 # Ход игры
-class course_of_the_game():
+class Course_of_the_game():
     def __init__(self):
         self.run_game = -1
         self.kegs = kegs()
