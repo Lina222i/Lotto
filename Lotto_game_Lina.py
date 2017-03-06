@@ -30,7 +30,7 @@ class bingo_card():
         new_card = copy.deepcopy(self.bingo_card)
         for index in range(0, 3):
             if len(str(new_card[0][index])) == 1:
-                new_card[0][index] = str('{}'.format(print_card[0][index]))
+                new_card[0][index] = str('{}'.format(new_card[0][index]))
 
         line_1 = ' '.join(map(str, [new_card[n][0] for n in range(0, 9)]))
         line_2 = ' '.join(map(str, [new_card[n][1] for n in range(0, 9)]))
